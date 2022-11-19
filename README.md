@@ -2,7 +2,8 @@
 
 ## Problem statement:
 Write a program in C that computes the following summations:
-Result = 1 - 1/2 + 1/3 - 1/4 + 1/5 – 1/6 +...........+1/9999 – 1/10000
+
+### Result = 1 - 1/2 + 1/3 - 1/4 + 1/5 – 1/6 +...........+1/9999 – 1/10000
 
 The calculations should be done in the following ways:
 1. Addition of operands from left to right.
@@ -12,7 +13,7 @@ The calculations should be done in the following ways:
 
 The summations above is accumulated first as float numbers, then double float numbers. Therefore, the program will print eight different calculations.
 
-### So that there will be eight possible results:
+##### So that there will be eight possible results:
 - **Result-1:** addition from left to right accumulated in float
 - **Result-2:** addition from right to left accumulated in float
 - **Result-3:** all positives + all negatives from left to right accumulated in float 
