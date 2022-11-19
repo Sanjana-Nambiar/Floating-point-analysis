@@ -38,7 +38,7 @@ Floating point numbers on most computers use binary representation, and we know 
 ## Accurate summations:
 The most accurate result by adding from right to left. While adding from right to left we are adding very small values together and letting them to at least add to something so that when it reaches the bigger values will have less difference. But while adding from the left to right we end up adding a very large number to a very small number, which will result in the smaller value being ignored and thus increases the error. Therefore, adding two values of similar magnitude is more accurate than adding two values of very different magnitudes, since you "discard" fewer bits of precision in the smaller value that way. The second most accurate one is by adding positive and negative terms separately from right to left and then subtracting them. This method is less accurate than the first method because here the difference in the magnitude being added is bigger which may cause a little bit of inaccuracy. Also, that in this case at the end we are subtracting two numbers of similar magnitudes, which results in loss of significant digits. This phenomenon is called catastrophic cancellation in which subtracting good approximations to two nearby numbers may yield a very bad approximation to the difference of the original numbers.
 
-<img height="500" width="700" alt="image" src="https://user-images.githubusercontent.com/85699181/202870933-589a897b-e2d7-435b-8a98-75f3fae1ad80.png">
+<img width="800" alt="image" src="https://user-images.githubusercontent.com/85699181/202870933-589a897b-e2d7-435b-8a98-75f3fae1ad80.png">
 
 ### REFERENCES: 
 - https://www.geeksforgeeks.org/difference-float-double-c-cpp/
